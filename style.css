@@ -23,6 +23,7 @@
 }
 
 .image img {
+    max-width: 100%;
     width: 300px;
     height: 300px;
     border-radius: 50%;
@@ -30,4 +31,17 @@
 
 .op {
     opacity: 1;
+}
+
+.Delhi {
+    border: 40px;
+    margin-right: 5%;
+    align-items: center;
+}
+
+.Placement {
+    padding-bottom: 100%;
+    margin-top: 0%;
+    align-content: center;
+    vertical-align: top;
 }
