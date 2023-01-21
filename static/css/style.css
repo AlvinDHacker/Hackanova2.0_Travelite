@@ -1,0 +1,47 @@
+#icons {
+    display: inline-block; 
+    width: 20px;
+    height: 20px;
+    background: rgb(119, 103, 103);
+    border-radius: 100%;
+}
+
+#selection_top {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background-image: url(pexels-jeswin-thomas-1007426.jpg);
+}
+
+.image {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img {
+    max-width: 100%;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+
+.op {
+    opacity: 1;
+}
+
+.Delhi {
+    border: 40px;
+    margin-right: 5%;
+    align-items: center;
+}
+
+.Placement {
+    padding-bottom: 100%;
+    margin-top: 0%;
+    align-content: center;
+    vertical-align: top;
+}
