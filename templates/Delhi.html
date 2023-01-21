@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Delhi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+    <link rel="stylesheet" type="text/css" href="static/css/chatbot.css">
+    <link rel="icon" href="static/images/OnlyTravelite_bg.png">
+    <script src="https://kit.fontawesome.com/ff91dab06e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar bg-body-tertiary">
+            <div class="container">
+                <a class="navbar-brand" href="homepage.html">
+                    <img src="static/images/OnlyTravelite_bg.png" width="38" height="42">
+                </a>
+            </div>
+        </nav>
+        <div class="container-fluid">
+            <a class="navbar-brand" href="homepage.html">Travelite</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="homepage.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Features
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="login.html">Tourist</a></li>
+                            <li><a class="dropdown-item" href="homepage.html">Locals</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">UPI</a></li>
+                            <li><a class="dropdown-item" href="#">Safety score</a></li>
+                            <li><a class="dropdown-item" href="#">Places to visit </a></li>
+                            <li><a class="dropdown-item" href="#">Places to live/hotels</a></li>
+                            <li><a class="dropdown-item" href="#">Dishes to try</a></li>
+                            <li><a class="dropdown-item" href="#">Free Wifi spots</a></li>
+                            <li><a class="dropdown-item" href="emergency_nos.html">Emergency Numbers</a></li>
+                            <li><a class="dropdown-item" href="#">Overseas Insurance</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <i class="fa-solid fa-magnifying-glass" style="margin-right: 10px;"></i>
+
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+                <a href="login.html"><button type="button" class="btn btn-primary position-relative"
+                        style="margin-left: 10px;">
+                        Login
+                        <span
+                            class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                            <span class="visually-hidden">New alerts</span>
+                        </span>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <br>
+
+    <div class="container text-center">
+        <div class="row align-items-start">
+            <div class="col">
+                <div class="card" style="width: 40rem;">
+                    <br>
+                    <div class="container">
+                        <h1>Top 10 Trending in Delhi</h1>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 13rem;">
+                    <img src="static/images/pexels-nataliya-vaitkevich-6120213.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Book hotels</h5>
+                        <p class="card-text">Find the best of accomodation for you around the most
+                            areas you want to visit </p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" style="width: 13rem;">
+                    <img src="static/images/recommend_dishes.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Try the Local Dishes</h5>
+                        <p class="card-text">Find the most lip smacking delicacies made
+                            by the locals</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+
+    <div class="container text-center">
+        <div class="row">
+            <div class="col">
+                <div class="image">
+                    <a
+                        href="https://www.google.com/maps/place/Humayun's+Tomb,+Nizamuddin,+Nizamuddin+East,+New+Delhi,+Delhi+110013/@28.5929693,77.2488336,17z/data=!3m1!4b1!4m5!3m4!1s0x390ce31abf23b4d5:0xb20a251215dad3f0!8m2!3d28.5929646!4d77.2510223">
+                        <img src="static/images/Humayun's_Tomb.jpg" class="img-fluid" alt="..."></a>
+                    <div class="Delhi">
+                        <h5>Humayun's Tomb</h5>
+                        <p>Description :</p>
+                        <p>Timings : All Day</p>
+                        <p>Price : 550 per person</p>
+                        <a href="homepage.html"><i class="fa-solid fa-plus"
+                                style="width: 20px; height: 20px;"></i></a>
+                        <i class="fa-regular fa-thumbs-up" style="width: 20px; height: 20px;"></i>
+                        <i class="fa-regular fa-comment" style="width: 20px; height: 20px;"></i>
+                        <i class="fa-regular fa-thumbs-down" style="width: 20px; height: 20px;"></i>
+                        <a href="homepage.html"><i class="fa-solid fa-bookmark"
+                                style="width: 20px; height: 20px;"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="image">
+                    <a
+                        href="https://www.google.com/maps/place/Shahi+Jama+Masjid/@27.1820662,78.014374,17z/data=!3m1!4b1!4m5!3m4!1s0x39747770add52adf:0x5cf586746adfb8b2!8m2!3d27.1820614!4d78.0165627">
+                        <img src="static/images/Jama_Masjid.jpg" class="img-fluid" alt="..."></a>
+                    <div class="Delhi">
+                        <h5>Jama Masjid</h5>
+                        <p>Description : </p>
+                        <p>Timings : All Day </p>
+                        <p>Price : Free</p>
+                        <a href="homepage.html"><i class="fa-solid fa-plus"
+                                style="width: 20px; height: 20px;"></i></a>
+                        <i class="fa-regular fa-thumbs-up" style="width: 20px; height: 20px;"></i>
+                        <i class="fa-regular fa-comment" style="width: 20px; height: 20px;"></i>
+                        <i class="fa-regular fa-thumbs-down" style="width: 20px; height: 20px;"></i>
+                        <a href="homepage.html"><i class="fa-solid fa-bookmark"
+                                style="width: 20px; height: 20px;"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="image">
+                    <a
+                        href="https://www.google.com/maps/place/Lotus+Temple/@28.5534967,77.2566377,17z/data=!3m1!4b1!4m5!3m4!1s0x390ce3c16e028cd1:0x653beb1ee85ec67a!8m2!3d28.553492!4d77.2588264">
+                        <img src="static/images/Lotus_Temple.jpg" class="img-fluid" alt="..."></a>
+                    <div class="Delhi">
+                        <h5>Lotus Temple</h5>
+                        <p>Description : </p>
+                        <p>Timings : 8:00 - 5:00</p>
+                        <p>Price : Free</p>
+                        <a href="homepage.html"><i class="fa-solid fa-plus"
+                                style="width: 20px; height: 20px;"></i></a>
+                        <i class="fa-regular fa-thumbs-up" style="width: 20px; height: 20px;"></i>
+                        <i class="fa-regular fa-comment" style="width: 20px; height: 20px;"></i>
+                        <i class="fa-regular fa-thumbs-down" style="width: 20px; height: 20px;"></i>
+                        <a href="homepage.html"><i class="fa-solid fa-bookmark"
+                                style="width: 20px; height: 20px;"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="image">
+                    <a
+                        href="https://www.google.com/maps/place/Rashtrapati+Bhawan,+President's+Estate,+New+Delhi,+Delhi/@28.6147748,77.1925721,16z/data=!3m1!4b1!4m5!3m4!1s0x390ce2a99ba1e313:0x7ed0da6bc307aa30!8m2!3d28.6141527!4d77.1959622">
+                        <img src="static/images/Rashtrapati_Bhavan.jpg" class="img-fluid" alt="..."></a>
+                    <div class="Delhi">
+                        <h5>Rashtrapati Bhavan</h5>
+                        <p>Description :</p>
+                        <p>Timings : 9:30 - 5:30</p>
+                        <p>Price : Pre booking - Free</p>
+                        <a href="homepage.html"><i class="fa-solid fa-plus"
+                                style="width: 20px; height: 20px;"></i></a>
+                        <i class="fa-regular fa-thumbs-up" style="width: 20px; height: 20px;"></i>
+                        <i class="fa-regular fa-comment" style="width: 20px; height: 20px;"></i>
+                        <i class="fa-regular fa-thumbs-down" style="width: 20px; height: 20px;"></i>
+                        <a href="homepage.html"><i class="fa-solid fa-bookmark"
+                                style="width: 20px; height: 20px;"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="image">
+                    <a
+                        href="https://www.google.com/maps/place/Hauz+Khas+Village,+Deer+Park,+Hauz+Khas,+New+Delhi,+Delhi+110016/@28.5533357,77.1920222,17z/data=!3m1!4b1!4m5!3m4!1s0x390d1d8aa6bccb0f:0x357d3d8396615cec!8m2!3d28.5533997!4d77.1941654">
+                        <img src="static/images/Hauz_Khaus_Village.jpg" class="img-fluid" alt="..."></a>
+                    <div class="Delhi">
+                        <h5>Clubbing in Hauz Khaus Village</h5>
+                        <p>Description : </p>
+                        <p>Timings : </p>
+                        <p>Price : </p>
+                        <a href="homepage.html"><i class="fa-solid fa-plus"
+                                style="width: 20px; height: 20px;"></i></a>
+                        <i class="fa-regular fa-thumbs-up" style="width: 20px; height: 20px;"></i>
+                        <i class="fa-regular fa-comment" style="width: 20px; height: 20px;"></i>
+                        <i class="fa-regular fa-thumbs-down" style="width: 20px; height: 20px;"></i>
+                        <a href="homepage.html"><i class="fa-solid fa-bookmark"
+                                style="width: 20px; height: 20px;"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="image">
+                    <a
+                        href="https://www.google.com/maps/place/Jantar+Mantar/@28.6270594,77.214438,17z/data=!3m1!4b1!4m5!3m4!1s0x390cfd4a694fc49b:0xa24a6ec962781b0c!8m2!3d28.6270547!4d77.2166267">
+                        <img src="static/images/Jantar_mantar.jpg" class="img-fluid" alt="..."></a>
+                    <div class="Delhi">
+                        <h5>Jantar Mantar</h5>
+                        <p>Description : </p>
+                        <p>Timings : </p>
+                        <p>Price : </p>
+                        <a href="homepage.html"><i class="fa-solid fa-plus"
+                                style="width: 20px; height: 20px;"></i></a>
+                        <i class="fa-regular fa-thumbs-up" style="width: 20px; height: 20px;"></i>
+                        <i class="fa-regular fa-comment" style="width: 20px; height: 20px;"></i>
+                        <i class="fa-regular fa-thumbs-down" style="width: 20px; height: 20px;"></i>
+                        <a href="homepage.html"><i class="fa-solid fa-bookmark"
+                                style="width: 20px; height: 20px;"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="image">
+                    <a
+                        href="https://www.google.com/maps/place/Connaught+Place,+New+Delhi,+Delhi+110001/@28.6289206,77.2065322,15z/data=!3m1!4b1!4m5!3m4!1s0x390cfd37b741d057:0xcdee88e47393c3f1!8m2!3d28.6304203!4d77.2177216">
+                        <img src="static/images/connaught_place.jpg" class="img-fluid" alt="..."></a>
+                    <div class="Delhi">
+                        <h5>Partying at the Connaught Palace</h5>
+                        <p>Description :</p>
+                        <p>Timings : </p>
+                        <p>Price : </p>
+                        <a href="homepage.html"><i class="fa-solid fa-plus"
+                                style="width: 20px; height: 20px;"></i></a>
+                        <i class="fa-regular fa-thumbs-up" style="width: 20px; height: 20px;"></i>
+                        <i class="fa-regular fa-comment" style="width: 20px; height: 20px;"></i>
+                        <i class="fa-regular fa-thumbs-down" style="width: 20px; height: 20px;"></i>
+                        <a href="homepage.html"><i class="fa-solid fa-bookmark"
+                                style="width: 20px; height: 20px;"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="image">
+                    <a
+                        href="https://www.google.com/maps/place/Chandni+Chowk,+New+Delhi,+Delhi/@28.6514112,77.2141277,14z/data=!3m1!4b1!4m5!3m4!1s0x390cfd1a88dcc559:0x24fa43c081dbe51!8m2!3d28.6505331!4d77.230337">
+                        <img src="static/images/Chandni_Chowk .jpg" class="img-fluid" alt="..."></a>
+                    <div class="Delhi">
+                        <h5>Shop at Chandni Chowk</h5>
+                        <p>Description :</p>
+                        <p>Timings : </p>
+                        <p>Price : </p>
+                        <a href="homepage.html"><i class="fa-solid fa-plus"
+                                style="width: 20px; height: 20px;"></i></a>
+                        <i class="fa-regular fa-thumbs-up" style="width: 20px; height: 20px;"></i>
+                        <i class="fa-regular fa-comment" style="width: 20px; height: 20px;"></i>
+                        <i class="fa-regular fa-thumbs-down" style="width: 20px; height: 20px;"></i>
+                        <a href="homepage.html"><i class="fa-solid fa-bookmark"
+                                style="width: 20px; height: 20px;"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="image">
+                    <a
+                        href="https://www.google.com/maps/place/India+Gate,+New+Delhi,+Delhi/@28.609093,77.2153952,14z/data=!3m1!4b1!4m5!3m4!1s0x390ce2db961be393:0xf6c7ef5ee6dd10ae!8m2!3d28.6110886!4d77.2345184">
+                        <img src="static/images/India_gate.jpg" class="img-fluid" alt="..."></a>
+                    <div class="Delhi">
+                        <h5>Morning walk near India Gate</h5>
+                        <p>Description : </p>
+                        <p>Timings : </p>
+                        <p>Price : </p>
+                        <a href="homepage.html"><i class="fa-solid fa-plus"
+                                style="width: 20px; height: 20px;"></i></a>
+                        <i class="fa-regular fa-thumbs-up" style="width: 20px; height: 20px;"></i>
+                        <i class="fa-regular fa-comment" style="width: 20px; height: 20px;"></i>
+                        <i class="fa-regular fa-thumbs-down" style="width: 20px; height: 20px;"></i>
+                        <a href="homepage.html"><i class="fa-solid fa-bookmark"
+                                style="width: 20px; height: 20px;"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="image">
+                    <a
+                        href="https://www.google.com/maps/place/National+Zoological+Park/@28.606745,77.2432148,17z/data=!3m1!4b1!4m5!3m4!1s0x390ce318a027dbb9:0xf12a1c6b59580448!8m2!3d28.6067403!4d77.2454035">
+                        <img src="static/images/National_Zoological_Park.jpg" class="img-fluid" alt="..."></a>
+                    <div class="Delhi">
+                        <h5>Tour the National Zoological Park</h5>
+                        <p>Description : </p>
+                        <p>Timings : </p>
+                        <p>Price : </p>
+                        <a href="homepage.html"><i class="fa-solid fa-plus"
+                                style="width: 20px; height: 20px;"></i></a>
+                        <i class="fa-regular fa-thumbs-up" style="width: 20px; height: 20px;"></i>
+                        <i class="fa-regular fa-comment" style="width: 20px; height: 20px;"></i>
+                        <i class="fa-regular fa-thumbs-down" style="width: 20px; height: 20px;"></i>
+                        <a href="homepage.html"><i class="fa-solid fa-bookmark"
+                                style="width: 20px; height: 20px;"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--CHATBOT-->
+
+    <div class="my_container">
+        <div class="chatbox">
+            <div class="chatbox_support">
+                <div class="chatbox_header">
+                    <div class="chatbox_image--header">
+                        <img src="https://www.focusedu.org/wp-content/uploads/2018/12/circled-user-male-skin-type-1-2.png" alt="image" width = "100px" height="100px">
+                    </div>
+                    <div class="chatbox_content--header">
+                        <h4 class="chatbox_heading--header">Chat Support</h4>
+                        <p class="chatbox_description--header">Hi, I'm Travis from Travelite. <br>How can I help you?</p>
+                    </div>
+                </div>
+                <div id="chatbot-conversation" class="chatbox_messages">
+                    <div></div>
+                </div>
+                <div class="chatbox_footer">
+                    <input id="chatbot-input" type="text" placeholder="Write a message...">
+                    <button id="chatbot-submit" class="chatbox_send--footer send_button">Send</button>
+                </div>
+            </div>
+            <div class="chatbox_button">
+                <button><img src="https://images.squarespace-cdn.com/content/v1/598c1a6b46c3c4a7b18a8908/f3c4acee-fe02-442b-b1e5-bcf2eabd6c34/Chatbot_Icon.png" alt="image" width="50px" height="50px"></button>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $SCRIPT_ROOT = '{{ request.script_root|tojson }}';
+    </script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+<script type="text/javascript" src="static/js/chatbot.js"></script>
+</body>
+
+</html>
