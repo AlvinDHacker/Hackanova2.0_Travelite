@@ -102,4 +102,4 @@ def delete_todo(sno):
     return redirect("/todo.html")
     
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=False)
