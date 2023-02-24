@@ -1,16 +1,19 @@
 
-  /* #chatbot-conversation {
+/* 
+#chatbot-conversation {
     height: 300px;
     overflow: auto;
     margin-bottom: 10px;
   }
   
-  #chatbot-input {
+#chatbot-input {
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
     margin-bottom: 10px;
-  } */
+  } 
+*/
+
   
 
 * {
@@ -46,11 +49,12 @@ body {
 
 /* CONTENT IS CLOSE */
 .chatbox_support {
-    display: flex;
+    display: none;
     flex-direction: column;
     background: #eee;
     width: 300px;
     height: 350px;
+    position: relative;
     z-index: -123456;
     opacity: 0;
     transition: all .5s ease-in-out;
@@ -58,10 +62,12 @@ body {
 
 /* CONTENT ISOPEN */
 .chatbox--active {
-    transform: translateY(-40px);
+    display: flex;
+    flex-direction: column;
+    transform: translateY(-10px);
     z-index: 123456;
     opacity: 1;
-
+    transition: all .5s ease-in-out;
 }
 
 /* BUTTON */
@@ -90,7 +96,7 @@ body {
     margin-top: auto;
     display: flex;
     overflow-y: scroll;
-    flex-direction: column-reverse;
+    flex-direction: column;
 }
 
 .messages_item {
@@ -99,11 +105,11 @@ body {
     width: fit-content;
 }
 
-.messages_item--operator {
+.messages_item--visitor {
     margin-left: auto;
 }
 
-.messages_item--visitor {
+.messages_item--operator {
     margin-right: auto;
 } 
 
@@ -161,14 +167,14 @@ body {
     max-width: 70%;
 }
 
-.messages_item--visitor,
+.messages_item--operator,
 .messages_item--typing {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
 }
 
-.messages_item--operator {
+.messages_item--visitor {
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;

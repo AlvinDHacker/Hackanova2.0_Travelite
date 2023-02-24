@@ -58,7 +58,7 @@ class Chatbox {
 
         let my_dict = {
             "Hi" : "Hey",
-            "What is your name": "My name is Travis",
+            "What is your name?": "My name is Travis",
             "How are you?" : "I am fine",
             "What are the tourist places near me?" : "Where do you live?",
             "Top 10 places in Delhi" : "1. Humayun's Tomb <br>2. Jama Masjid <br>3. Lotus Temple <br>4. Rashtrapati Bhavan <br>5. Clubbing in Hauz Khaus Village <br>6. Jantar Mantar <br>7. Partying at the Connaught Palace <br>8. Shop at Chandni Chowk <br>9. Morning walk near India Gate <br>10. Tour the National Zoological Park"
@@ -77,8 +77,8 @@ class Chatbox {
         for (let k in my_dict)
         {
             if (input == k) {
-                conversation.innerHTML += '<div class="messages_item messages_item--visitor">' + my_dict[k] + '</div>'
-                conversation.innerHTML += '<div class="messages_item messages_item--operator">' + input + '</div>'
+                conversation.innerHTML += '<div class="messages_item messages_item--visitor">' + input + '</div>'
+                conversation.innerHTML += '<div class="messages_item messages_item--operator">' + my_dict[k] + '</div>'
             }
         }
         // this.messages.slice().reverse().forEach(function(item) {

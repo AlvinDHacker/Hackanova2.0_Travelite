@@ -1,22 +1,25 @@
-from  flask import Flask, render_template, request, redirect
+from flask import Flask, render_template, request, redirect, current_app
 from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
 
 app = Flask(__name__)
 
-#SQLALCHEMY
 app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///todo.db"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
 class Todo(db.Model):
-    sno = db.Column(db.Integer, primary_key=True)
-    title = db.Column(db.String(200), nullable=False)
-    desc = db.Column(db.String(500), nullable=False)
-    date_created = db.Column(db.DateTime, default=datetime.utcnow)
+    sno = db.Column(db.Integer, primary_key = True)
+    title = db.Column(db.String(200), nullable = False)
+    desc = db.Column(db.String(500), nullable = False)
+    date_created = db.Column(db.DateTime, default = datetime.now)
     def __repr__(self) -> str:
-        return f"{self.sno} - {self.title}" 
-#SQLALCHEMY
+        return f"{self.sno} - {self.title}"
+
+with app.app_context():
+    # within this block, current_app points to app.
+    print(current_app.name)
+    db.create_all()
 
 @app.get('/')
 def home_html():
@@ -66,6 +69,10 @@ def language_course_html():
 def login2_html():
     return render_template("login2.html")
 
+@app.get('/Delhi.html')
+def Delhi_html():
+    return render_template("Delhi.html")
+
 @app.route('/todo.html', methods=['GET', 'POST'])
 def todo_html():
     if request.method == 'POST':
@@ -75,18 +82,13 @@ def todo_html():
         db.session.add(todo)
         db.session.commit()
     allTodo = Todo.query.all()
-    return render_template("todo.html", allTodo = allTodo)
+    return render_template("todo.html", allTodo=allTodo)
 
-@app.get('/Delhi.html')
-def Delhi_html():
-    return render_template("Delhi.html")
-
-
-@app.route('/showtodo')
-def products():
-    allTodo = Todo.query.all()
-    print(allTodo)
-    return "Hello World"
+# @app.route('/show')
+# def show_todo():
+#     allTodo = Todo.query.all()
+#     print(allTodo)
+#     return "Hello World"
 
 @app.route('/update')
 def update_todo():
@@ -99,7 +101,7 @@ def delete_todo(sno):
     todo = Todo.query.filter_by(sno=sno).first()
     db.session.delete(todo)
     db.session.commit()
-    return redirect("/todo.html")
-    
+    return redirect('/todo.html')
+
 if __name__ == "__main__":
-    app.run(debug=False)
+    app.run(debug=True)
