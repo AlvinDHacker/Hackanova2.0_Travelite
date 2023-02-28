@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block title %} Update Schedule {% endblock title %}
+{% block body %}
+<br>
+<div class="container my-3">
+    <a href="update.html" style="text-decoration: none; color: black;">
+        <h2>Update ToDo</h2>
+    </a>
+    <form action="/update/{{todo.sno}}" method="POST">
+        <div class="mb-3">
+            <label for="title" class="form-label">ToDo Title</label>
+            <input type="text" class="form-control" name="title" id="title" value="{{todo.title}}" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+            <label for="desc" class="form-label">ToDo Description</label>
+            <input type="text" class="form-control" name="desc" id="desc" value="{{todo.title}}">
+        </div>
+        <button type="submit" class="btn btn-primary">Update</button>
+    </form>
+</div>
+{% endblock body %}

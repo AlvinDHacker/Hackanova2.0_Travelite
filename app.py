@@ -90,11 +90,19 @@ def todo_html():
 #     print(allTodo)
 #     return "Hello World"
 
-@app.route('/update')
-def update_todo():
-    allTodo = Todo.query.all()
-    print(allTodo)
-    return "Hello World"
+@app.route('/update/<int:sno>', methods=['GET', 'POST'])
+def update_todo(sno):
+    if request.method == 'POST':
+        title = request.form['title']
+        desc = request.form['desc']
+        todo = Todo.query.filter_by(sno=sno).first()
+        todo.title = title
+        todo.desc = desc
+        db.session.add(todo)
+        db.session.commit()
+        return redirect('/todo.html')
+    todo = Todo.query.filter_by(sno=sno).first()
+    return render_template("update.html", todo=todo)
 
 @app.route('/delete/<int:sno>')
 def delete_todo(sno):
